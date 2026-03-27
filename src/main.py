@@ -1,4 +1,4 @@
 Sistema insano
 Version inicial del_proyecto
 
-"funcionalidad: Autenticacion y login"
+print("funcionalidad: Autenticacion y login")
