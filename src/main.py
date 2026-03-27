@@ -7,7 +7,4 @@ print("Funcionalidad: Catalogo de productos")
 feature/modulo-productos
 
 print("Funcionalidad: Procesamiento de pagos")
-
-print("Funcionalidad: Generacion de reportes")
-
-print("Funcionalidad: Autenticacion y login")
+feature/modulo-pagos
