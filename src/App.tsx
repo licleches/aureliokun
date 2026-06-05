@@ -1,14 +1,31 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Home from "./pages/Home";                  
-import Homepage from "./pages/Homepage";
-import Products from "./pages/Products";
-import SingleProduct from "./pages/SingleProduct";
+// Importa todas tus páginas
+import Agendar from "./Pages/Agendar";
+import Cotizar from "./Pages/Cotizar";
+import Home from "./Pages/Home";
+import Products from "./Pages/Products";
+import Servicios from "./Pages/Servicios";
+import Nosotros from "./Pages/Us";
 
-export default function App() {
+function App() {
   return (
-    <div className=" h-[100dvh] bg-[#EDBB99]">
-      <Products />
-    </div>
+    <Router>
+      <Routes>
+        {/* Rutas principales */}
+        <Route path="/" element={<Home />} />
+        <Route path="/Agendar" element={<Agendar />} />
+        <Route path="/Cotizar" element={<Cotizar />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/Servicios" element={<Servicios />} />
+        <Route path="/Nosotros" element={<Nosotros />} />
+
+
+        {/* Ruta para páginas no encontradas (404) */}
+        <Route path="*" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
+
+export default App;
