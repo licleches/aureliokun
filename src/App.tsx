@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Agendar from "./pages/Agendar";
-import Cotizar from "./pages/Cotizar";
-import home from "./pages/home";
-import products from "./pages/products";
-import Servicios from "./pages/Servicios";
-import Nosotros from "./pages/Us";
+import Agendar from "./pages/agendar";
+import Cotizar from "./pages/cotizar";
+import Home from "./pages/home";
+import Products from "./pages/products";
+import Servicios from "./pages/servicios";
+import Nosotros from "./pages/us";
 
 function App() {
   return (
