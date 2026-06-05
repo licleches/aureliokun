@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Agendar from "./pages/Agendar";
 import Cotizar from "./pages/Cotizar";
-import Home from "./pages/Home";
-import Products from "./pages/Products";
+import Home from "./pages/home";
+import Products from "./pages/products";
 import Servicios from "./pages/Servicios";
 import Nosotros from "./pages/Us";
 
