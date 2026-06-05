@@ -13,18 +13,17 @@ const routeLabels: Record<string, string> = {
 
 export const Breadcrumbs = () => {
   const location = useLocation();
-  
+
   if (location.pathname === '/') return null;
 
   const pathnames = location.pathname.split('/').filter(Boolean);
-
   const breadcrumbs = [{ label: 'Inicio', path: '/' }];
 
   let currentPath = '';
   pathnames.forEach((segment) => {
     currentPath += `/${segment}`;
     breadcrumbs.push({
-      label: routeLabels[currentPath] || 
+      label: routeLabels[currentPath] ||
              segment.charAt(0).toUpperCase() + segment.slice(1),
       path: currentPath,
     });
@@ -37,14 +36,10 @@ export const Breadcrumbs = () => {
           {breadcrumbs.map((crumb, index) => (
             <li key={crumb.path} className="flex items-center">
               {index > 0 && <ChevronRight size={18} className="mx-3 text-gray-400" />}
-              
               {index === breadcrumbs.length - 1 ? (
                 <span className="font-medium text-gray-900">{crumb.label}</span>
               ) : (
-                <Link 
-                  to={crumb.path} 
-                  className="hover:text-purple-600 transition-colors"
-                >
+                <Link to={crumb.path} className="hover:text-purple-600 transition-colors">
                   {crumb.label}
                 </Link>
               )}
