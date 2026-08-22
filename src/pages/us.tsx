@@ -9,7 +9,6 @@ export default function Nosotros() {
 
       <div className="relative h-[75vh] min-h-[500px] overflow-hidden bg-black">
         <img
-          src="/images/taller.jpg"
           alt="Taller Desert Jewel Bodyshop"
           className="absolute inset-0 w-full h-full object-cover opacity-50"
         />
@@ -152,7 +151,6 @@ export default function Nosotros() {
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                 <circle cx="12" cy="10" r="3" />
               </svg>
-              Frente a la clínica 53 del IMSS, Av. Nuevo León
             </p>
           </div>
           <div>

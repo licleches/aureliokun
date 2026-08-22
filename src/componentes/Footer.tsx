@@ -36,7 +36,7 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-2">
               <Phone size={16} className="shrink-0 text-brand-400" />
-              <span>644 123 4567</span>
+              <span>653-107-9742</span>
             </div>
             <a
               href="https://instagram.com/desert_jewel"
