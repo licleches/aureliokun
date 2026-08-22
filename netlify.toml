@@ -1,0 +1,90 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=(), payment=(), usb=(), fullscreen=(self)"
+    Content-Security-Policy = """
+      default-src 'self';
+      script-src 'self';
+      style-src 'self' 'unsafe-inline';
+      img-src 'self' data: blob: https://cvjkejkysygphykhfexe.supabase.co;
+      font-src 'self';
+      connect-src 'self' https://cvjkejkysygphykhfexe.supabase.co https://api.ipify.org;
+      frame-ancestors 'none';
+      form-action 'self';
+      base-uri 'self';
+      object-src 'none';
+      media-src 'self';
+      worker-src 'self' blob:;
+    """
+    Access-Control-Allow-Origin = "https://desertjewelbodyshop.com"
+    Access-Control-Allow-Methods = "GET, POST, OPTIONS"
+    Access-Control-Allow-Headers = "Content-Type, Authorization"
+    Access-Control-Max-Age = "86400"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "/*.webm"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/agendar"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/cotizar"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/servicios"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/nosotros"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin"
+  to = "/admin/dashboard"
+  status = 200
+
+[[redirects]]
+  from = "/.netlify/*"
+  to = "/index.html"
+  status = 404
