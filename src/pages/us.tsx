@@ -67,13 +67,6 @@ export default function Nosotros() {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-200">
             </div>
-            <div className="absolute -bottom-5 -left-5 w-24 h-24 rounded-2xl flex items-center justify-center shadow-lg"
-                 style={{ backgroundColor: "#006837" }}>
-              <span className="text-white text-3xl font-bold">+2</span>
-            </div>
-            <div className="absolute -top-5 -right-5 w-24 h-24 rounded-2xl bg-white shadow-lg flex items-center justify-center border border-gray-100">
-              <span className="text-3xl font-bold" style={{ color: "#006837" }}>2023</span>
-            </div>
           </div>
         </div>
       </div>
@@ -141,12 +134,6 @@ export default function Nosotros() {
             <h3 className="text-2xl font-semibold mb-4" style={{ color: "#231F20" }}>Ubicación</h3>
             <p className="text-gray-600 text-lg leading-relaxed">
               San Luis Río Colorado, Sonora, México
-            </p>
-            <p className="text-gray-500 text-sm mt-2 flex items-center gap-2">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4 shrink-0" style={{ color: "#006837" }}>
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                <circle cx="12" cy="10" r="3" />
-              </svg>
             </p>
           </div>
           <div>
