@@ -8,7 +8,8 @@ export default function Nosotros() {
       <Breadcrumbs />
 
       <div className="relative h-[75vh] min-h-[500px] overflow-hidden bg-black">
-        <img
+        <img 
+          src="/images/faros2.webp"
           alt="Taller Desert Jewel Bodyshop"
           className="absolute inset-0 w-full h-full object-cover opacity-50"
         />
@@ -65,11 +66,6 @@ export default function Nosotros() {
           </div>
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-200">
-              <img 
-                src="/images/taller.jpg"         
-                alt="Taller Desert Jewel Bodyshop"
-                className="w-full h-[400px] object-cover"
-              />
             </div>
             <div className="absolute -bottom-5 -left-5 w-24 h-24 rounded-2xl flex items-center justify-center shadow-lg"
                  style={{ backgroundColor: "#006837" }}>
